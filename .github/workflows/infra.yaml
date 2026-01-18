@@ -23,6 +23,7 @@ jobs:
   terraform:
     name: Terraform Plan & Apply
     runs-on: ubuntu-latest
+    environment: Dev
     defaults:
       run:
         working-directory: ./Infra-Setup-Project
