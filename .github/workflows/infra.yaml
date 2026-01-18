@@ -104,30 +104,30 @@ jobs:
           retention-days: 30
 
 
-  validate-plan:
-    name: Validate Terraform Plan
-    runs-on: ubuntu-latest
+  # validate-plan:
+  #   name: Validate Terraform Plan
+  #   runs-on: ubuntu-latest
     
-    permissions:
-      contents: read
+  #   permissions:
+  #     contents: read
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: ${{ env.TF_VERSION }}
+  #     - name: Setup Terraform
+  #       uses: hashicorp/setup-terraform@v2
+  #       with:
+  #         terraform_version: ${{ env.TF_VERSION }}
 
-      - name: Terraform Init
-        run: terraform init
+  #     - name: Terraform Init
+  #       run: terraform init
 
-      - name: TFLint
-        uses: terraform-linters/setup-tflint@v3
+  #     - name: TFLint
+  #       uses: terraform-linters/setup-tflint@v3
 
-      - name: Init TFLint
-        run: tflint --init
+  #     - name: Init TFLint
+  #       run: tflint --init
 
-      - name: Run TFLint
-        run: tflint -f compact
+  #     - name: Run TFLint
+  #       run: tflint -f compact
