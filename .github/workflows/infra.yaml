@@ -24,9 +24,6 @@ jobs:
     name: Terraform Plan & Apply
     runs-on: ubuntu-latest
     environment: Dev
-    defaults:
-      run:
-        working-directory: ./Infra-Setup-Project
     
     permissions:
       contents: read
@@ -103,9 +100,6 @@ jobs:
   validate-plan:
     name: Validate Terraform Plan
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Infra-Setup-Project
     
     permissions:
       contents: read
