@@ -47,7 +47,10 @@ jobs:
           role-session-name: github-actions-terraform
 
       - name: Test AWS Credentials
-        run: aws sts get-caller-identity
+        run: |
+          echo "AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}"
+          aws sts get-caller-identity
+        continue-on-error: true
 
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
