@@ -5,12 +5,12 @@ output "vpc_id" {
 
 output "public_subnet_id" {
   description = "Public Subnet ID"
-  value       = aws_public_subnet.main.id
+  value       = aws_subnet.public.id
 }
 
 output "private_subnet_id" {
   description = "Private Subnet ID"
-  value       = aws_private_subnet.main.id
+  value       = aws_subnet.private.id
 }
 
 output "internet_gateway_id" {
