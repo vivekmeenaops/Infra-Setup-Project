@@ -37,5 +37,5 @@ variable "availability_zone" {
 variable "s3_bucket_name" {
   description = "S3 bucket name"
   type        = string
-  default     = "my-terraform-bucket"
+  default     = "my-terraform-bucket-dev-tf-testing"
 }
