@@ -90,7 +90,7 @@ jobs:
 
       - name: Upload Outputs
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: terraform-outputs
           path: Infra-Setup-Project/outputs.json
