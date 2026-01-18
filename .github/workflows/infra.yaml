@@ -99,9 +99,9 @@ jobs:
   validate-plan:
     name: Validate Terraform Plan
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Infra-Setup-Project
+    # defaults:
+    #   run:
+    #     working-directory: ./Infra-Setup-Project
     
     permissions:
       contents: read
