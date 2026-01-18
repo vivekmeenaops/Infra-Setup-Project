@@ -13,10 +13,10 @@ output "private_subnet_id" {
   value       = module.vpc.private_subnet_id
 }
 
-output "s3_bucket_name" {
-  description = "S3 Bucket Name"
-  value       = module.s3.bucket_name
-}
+# output "s3_bucket_name" {
+#   description = "S3 Bucket Name"
+#   value       = module.s3.bucket_name
+# }
 
 # output "s3_bucket_arn" {
 #   description = "S3 Bucket ARN"

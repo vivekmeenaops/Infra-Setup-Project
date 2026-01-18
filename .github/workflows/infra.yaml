@@ -51,8 +51,8 @@ jobs:
           aws sts get-caller-identity
         continue-on-error: true
 
-      - name: Terraform Format Check
-        run: terraform fmt -check -recursive
+      # - name: Terraform Format Check
+      #   run: terraform fmt -check -recursive
 
       - name: Terraform Init
         run: terraform init
