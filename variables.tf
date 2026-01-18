@@ -34,8 +34,8 @@ variable "availability_zone" {
   default     = "us-east-1a"
 }
 
-variable "s3_bucket_name" {
-  description = "S3 bucket name"
-  type        = string
-  default     = "my-terraform-bucket-dev-tf-testing"
-}
+# variable "s3_bucket_name" {
+#   description = "S3 bucket name"
+#   type        = string
+#   default     = "my-terraform-bucket-dev-tf-testing"
+# }

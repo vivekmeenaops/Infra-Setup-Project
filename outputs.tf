@@ -18,7 +18,7 @@ output "s3_bucket_name" {
   value       = module.s3.bucket_name
 }
 
-output "s3_bucket_arn" {
-  description = "S3 Bucket ARN"
-  value       = module.s3.bucket_arn
-}
+# output "s3_bucket_arn" {
+#   description = "S3 Bucket ARN"
+#   value       = module.s3.bucket_arn
+# }
